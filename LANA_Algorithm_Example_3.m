@@ -42,6 +42,14 @@
 % Created on: Monday 04/20/2020
 % Last revision: Monday 04/20/2020
 % Version: 1.0
+%
+%------------------------------------------------
+%
+% This code was modified by Sebastian Urdaneta to solve the circuit found
+% at the link below. The link also gives a detailed explanation of the
+% process behind this code.
+% #TODO ----> LINK HERE <-----
+%
 
 %------------- BEGIN CODE --------------
 
@@ -55,7 +63,7 @@
   ng = 9;   %Total number of nodes in circuit (including ground node)
 
   %Identify row dimension of incidence matrix (Edges/Elements)
-  mr = 10;           %Number of resistors in circuit
+  mr = 10;          %Number of resistors in circuit
   mv = 3;           %Number of dc voltage sources in circuit
   mi = 2;           %Number of dc current sources in circuit
   m = mr + mv + mi; %Total number of elements (edges) in circuit
@@ -95,8 +103,7 @@
   %  
   %STEP 5A: SET UP RIGHT-HAND SIDE VECTORS FOR KVLS IN POTENTIAL FORM
   %
- 
-  %Vv = [4.97 ; 4.97 ];  %Measured values provided by voltage sources
+
   Vv = [5; 2.5; 5];          %Known ideal values provided by voltage sources
   
   Ii = [1; 2.5];      %Known ideal values provided by current sources
