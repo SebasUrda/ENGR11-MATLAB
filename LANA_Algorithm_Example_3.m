@@ -48,7 +48,7 @@
 % This code was modified by Sebastian Urdaneta to solve the circuit found
 % at the link below. The link also gives a detailed explanation of the
 % process behind this code.
-% #TODO ----> LINK HERE <-----
+% https://fuegocongelado.wordpress.com/2021/03/09/linear-algebra-nodal-analysis/
 %
 
 %------------- BEGIN CODE --------------
